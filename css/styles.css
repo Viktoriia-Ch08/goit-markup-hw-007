@@ -852,19 +852,28 @@ body {
 @media screen and (min-width: 768px) {
    .footer-container {
       flex-direction: row;
-      align-items: baseline;
-      gap: 96px 108px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 24px;
 
       padding-top: 96px;
       padding-bottom: 96px;
+      padding-right: 110px;
+      padding-left: 110px;
 
    }
 }
 
 @media screen and (min-width: 1158px) {
    .footer-container {
+      justify-content: center;
+      gap: 96px 80px;
+      
       padding-top: 100px;
       padding-bottom: 100px;
+      padding-right: 16px;
+      padding-left: 16px;
+
    }
 }
 
@@ -874,6 +883,14 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+   .footer-elements {
+      align-items: flex-start;
+      
+   }
+   
 }
 
 .logo-side {
