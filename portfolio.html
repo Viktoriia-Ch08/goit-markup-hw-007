@@ -22,19 +22,29 @@
     <header class="header">
       <div class="header-container container">
         <!--Navigation-->
+        <a class="logo-link link" href="./index.html">
+          Web<span class="header-logo">Studio</span></a
+        >
+        <button
+          class="menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icon.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
 
         <nav class="header-nav">
-          <a class="logo-link link" href="./index.html">
-            Web<span class="header-logo">Studio</span></a
-          >
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-link link" href="./index.html">Studio</a>
+              <a class="nav-link link current-page" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link current-page link" href="./portfolio.html">
-                Portfolio</a
-              >
+              <a class="nav-link link" href="./portfolio.html"> Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link" href="">Contacts</a>
@@ -58,6 +68,7 @@
         </address>
       </div>
     </header>
+
     <main>
       <!--Gallery-->
       <section class="gallery-section">
@@ -292,7 +303,7 @@
     <div class="footer-wrapper">
       <footer class="footer-section">
         <div class="footer-container container">
-          <div class="logo-side">
+          <div class="logo-side footer-elements">
             <a class="logo-link footer-link link" href="./index.html">
               Web<span class="footer-logo">Studio</span></a
             >
@@ -302,7 +313,7 @@
             </p>
           </div>
           <!-- Social-media footer -->
-          <div class="social-media">
+          <div class="social-media footer-elements">
             <p class="footer-text text">Social media</p>
             <ul class="socials-list footer-list list">
               <li class="socials-item">
@@ -360,7 +371,7 @@
             </ul>
           </div>
           <!-- Form Subscribe -->
-          <div class="form-container container">
+          <div class="form-container footer-elements">
             <h2 class="form-text text">Subscribe</h2>
             <div class="form-wrapper">
               <form class="form">
