@@ -120,10 +120,11 @@ body {
 
 @media screen and (min-width: 1158px) {
    .container {
-      max-width: 1440px;
+      max-width: 1128px;
    }
 
 }
+
 
 
 .title {
@@ -172,14 +173,14 @@ body {
    align-items: center;
    justify-content: space-between;
 
-   padding-left: 16px;
-   padding-right: 16px;
+
 }
 
 @media screen and (max-width: 767px) {
-   .header-container {
-      padding: 24px 16px;
-   }
+  .header-container {
+      padding-left: 16px;
+      padding-right: 16px;
+  }
 }
 
 /* Logo */
@@ -194,6 +195,11 @@ body {
    text-transform: uppercase;
 
    color: var(--logo-color);
+}
+
+.header-logo-link {
+   padding-top: 24px;
+   padding-bottom: 24px;
 }
 
 .header-logo {
@@ -470,6 +476,13 @@ body {
    padding-right: 16px;
 }
 
+@media screen and (min-width: 768px) {
+   .priority-container {
+      padding-left: 0;
+      padding-right: 0; 
+   }
+}
+
 .priority-list {
    display: flex;
    flex-wrap: wrap;
@@ -645,7 +658,7 @@ body {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   gap: 24px;
+   gap: 72px;
 
 }
 
@@ -665,12 +678,6 @@ body {
       0px 2px 1px rgba(46, 47, 66, 0.08);
    border-radius: 0px 0px 4px 4px;
    background-color: var(--primary-bg-color);
-}
-
-@media screen and (min-width:768px) {
-   .team-item {
-      width: calc((100% - 72px) / 2);
-   }
 }
 
 @media screen and (min-width: 1158px) {
@@ -748,9 +755,12 @@ body {
    padding: 96px 0;
 }
 
-.customers-container {
-   padding-left: 16px;
-   padding-right: 16px;
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+   .customers-container {
+      padding-right: 108px;
+      padding-left: 108px;
+   }
+   
 }
 
 .customers-title {
@@ -774,6 +784,7 @@ body {
 
 @media screen and (min-width:768px) {
    .customers-list {
+      justify-content: space-between;
       column-gap: 24px;
    }
 
@@ -849,12 +860,12 @@ body {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1158px) {
    .footer-container {
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-start;
-      gap: 24px;
+      gap: 72px 24px;
 
       padding-top: 96px;
       padding-bottom: 96px;
@@ -866,13 +877,13 @@ body {
 
 @media screen and (min-width: 1158px) {
    .footer-container {
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
       gap: 96px 80px;
       
       padding-top: 100px;
       padding-bottom: 100px;
-      padding-right: 16px;
-      padding-left: 16px;
+      
 
    }
 }
@@ -1229,20 +1240,39 @@ body {
    top: 50%;
    left: 50%;
 
-   width: 408px;
-   min-height: 576px;
+   
+
+   width: 275px;
+   min-height: 450px;
 
    transform: translate(-50%, -50%) rotate(0) scale(1);
    opacity: 1;
 
-   padding-left: 24px;
-   padding-right: 24px;
+   padding-left: 10px;
+   padding-right: 10px;
 
    background-color: var(--modal-bg);
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
 
    transition: transform 300ms linear 200ms, opacity 300ms linear 200ms;
+}
+@media screen and (min-width: 428px) {
+   .modal {
+      width: 392px;
+      min-height: 584px;
+      padding-left: 18px;
+      padding-right: 18px;
+   }
+}
+@media screen and (min-width: 768px) {
+   .modal {
+      width: 408px;
+      min-height: 584px;
+      padding-left: 24px;
+      padding-right: 24px;
+   }
+   
 }
 
 .backdrop.is-hidden .modal {
@@ -1266,40 +1296,78 @@ body {
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
 
-   transition: background-color var(--hover-focus-trans);
+   
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
-   background-color: var(--hover-focus);
+@media screen and (min-width: 768px) {
+   .modal-btn {
+      transition: background-color var(--hover-focus-trans);
+   }
+
+   .modal-btn:hover,
+   .modal-btn:focus {
+      background-color: var(--hover-focus);
 }
+}
+
+
 
 .modal-close-icon {
    fill: rgba(46, 47, 66, 1);
-   transition: color var(--hover-focus-trans);
 }
 
-.modal-btn:hover .modal-close-icon,
+@media screen and (min-width: 768px) {
+   .modal-close-icon {
+      transition: color var(--hover-focus-trans);
+   }
+
+   .modal-btn:hover,
+   .modal-btn:focus {
+      background-color: var(--hover-focus);
+   }
+   
+   .modal-btn:hover .modal-close-icon,
 .modal-btn:focus .modal-close-icon {
    fill: #FFFFFF;
 }
+}
+
 
 /* Inputs */
 .modal-text {
-   width: 360px;
-   padding-top: 72px;
-   margin-bottom: 16px;
-
+   width: 260px;
+   margin-bottom: 5px;
+   padding-top: 60px;
+   
+   
+   font-size: 12px;
    font-weight: 500;
    text-align: center;
 
    color: #2E2F42;
 }
 
+@media screen and (min-width: 428px) {
+   .modal-text {
+      width: 360px;
+      margin-bottom: 16px;
+      padding-top: 72px;
+
+      font-size: 16px;
+   }
+}
 .modal-form {
    display: flex;
    flex-direction: column;
 
+   width: 250px;
+
+}
+
+@media screen and (min-width: 428px) {
+   .modal-form {
+      width: 360px;
+   }
 }
 
 .wrapper {
@@ -1318,7 +1386,7 @@ body {
 }
 
 .modal-input {
-   width: 360px;
+   width: 250px;   
    height: 40px;
    padding-left: 38px;
 
@@ -1328,12 +1396,24 @@ body {
    border: 1px solid rgba(46, 47, 66, 0.4);
    border-radius: 4px;
 
-   transition: border var(--hover-focus-trans);
 }
 
-.modal-input:focus {
+@media screen and (min-width: 428px) {
+   .modal-input {
+      width: 360px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .modal-input {
+   transition: border var(--hover-focus-trans);
+   }
+   .modal-input:focus {
    border: 1px solid #4D5AE5;
 }
+}
+
+
 
 .modal-icon {
    position: absolute;
@@ -1344,17 +1424,24 @@ body {
 
    color: currentColor;
 
-   transition: fill var(--hover-focus-trans);
 }
 
-.modal-input:focus+.modal-icon {
+@media screen and (min-width: 768px) {
+   .modal-icon {
+   transition: fill var(--hover-focus-trans);
+   }
+
+   .modal-input:focus+.modal-icon {
    fill: #4D5AE5;
 }
+}
+
+
 
 .modal-form-message {
    display: block;
    width: 100%;
-   min-height: 120px;
+   min-height: 90px;
    max-height: 180px;
    padding: 8px 16px;
    margin-bottom: 16px;
@@ -1371,17 +1458,28 @@ body {
    outline-offset: -2px;
    color: rgba(46, 47, 66, 1);
 
-   transition: border var(--hover-focus-trans);
 }
 
 .modal-form-message::placeholder {
-
    color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-form-message:focus {
+@media screen and (min-width: 428px) {
+   .modal-form-message {
+      min-height: 120px;
+   }
+   
+}
+@media screen and (min-width: 768px) {
+   .modal-form-message {
+   transition: border var(--hover-focus-trans);
+   }
+   
+   .modal-form-message:focus {
    border: 1px solid #4D5AE5;
 }
+}
+
 
 
 .modal-agreement {
@@ -1390,8 +1488,15 @@ body {
    justify-content: flex-start;
    gap: 8px;
 
-   margin-bottom: 24px;
+   margin-bottom: 10px;
 
+}
+
+@media screen and (min-width: 428px) {
+   .modal-agreement {
+   margin-bottom: 24px;
+   }
+   
 }
 
 .agreement {
@@ -1414,7 +1519,7 @@ body {
 
 
    transition: border var(--hover-focus-trans),
-      background-color var(--hover-focus-trans), background-size var(--hover-focus-trans);
+   background-color var(--hover-focus-trans), background-size var(--hover-focus-trans);
 
    cursor: pointer;
 
@@ -1440,7 +1545,7 @@ body {
 
 .submit-btn {
    width: 169px;
-   height: 56px;
+   height: 40px;
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 24px;
@@ -1456,18 +1561,32 @@ body {
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
 
-   transition: background-color var(--hover-focus-trans);
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
+@media screen and (min-width: 428px) {
+   .submit-btn {
+   height: 56px;
+   }
+   
+}
+
+@media screen and (min-width: 768px) {
+   .submit-btn {
+   transition: background-color var(--hover-focus-trans);
+   }
+   
+   .submit-btn:hover,
+   .submit-btn:focus {
    background-color: var(--hover-focus);
 
 }
+}
+
+
 
 /* Portfolio */
 /* Filters */
-/* .filters-list {
+.filters-list {
    display: flex;
    justify-content: center;
    gap: 24px; 
@@ -1495,10 +1614,10 @@ body {
    border: 1px solid transparent;
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
-} */
+}
 
 /*Gallery */
-/* .gallery-section {
+.gallery-section {
    margin-top: 72px;
    padding-top: 96px;
    padding-bottom: 120px;
@@ -1580,4 +1699,4 @@ body {
 .gallery-link:focus .thumb::before,
 .gallery-link:focus .img-text {
    transform: translateY(0);
-} */
+}
