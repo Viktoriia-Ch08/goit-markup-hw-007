@@ -1763,13 +1763,14 @@ body {
 .gallery-list {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: center;
    row-gap: 48px;
 
 }
 @media screen and (min-width:768px) {
    .gallery-list {
       row-gap: 72px;
+      justify-content: space-between;
    }
 
 }
