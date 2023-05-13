@@ -26,16 +26,7 @@
             <a class="logo-link header-logo-link link" href="./index.html">
               Web<span class="header-logo">Studio</span></a
             >
-            <button
-              class="menu-toggle js-open-menu"
-              type="button"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
-              <svg class="menu-toggle-icon" width="32" height="22">
-                <use href="./images/icon.svg#icon-menu-btn"></use>
-              </svg>
-            </button>
+
             <!--Navigation-->
             <nav class="header-nav">
               <ul class="nav-list list">
@@ -68,428 +59,439 @@
               </li>
             </ul>
           </address>
+          <button
+            class="menu-toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-toggle-icon" width="32" height="22">
+              <use href="./images/icon.svg#icon-menu-btn"></use>
+            </svg>
+          </button>
         </div>
       </header>
+      <main>
+        <!--Gallery-->
+        <section class="gallery-section">
+          <div class="portfolio-container container">
+            <h1 class="filters-headline headline" hidden>Portfolio</h1>
+            <!--Filters-->
+            <ul class="filters-list list">
+              <li class="filters-item">
+                <button class="buttons" type="button">All</button>
+              </li>
+              <li class="filters-item">
+                <button class="buttons" type="button">Web Site</button>
+              </li>
+              <li class="filters-item">
+                <button class="buttons" type="button">App</button>
+              </li>
+              <li class="filters-item">
+                <button class="buttons" type="button">Design</button>
+              </li>
+              <li class="filters-item">
+                <button class="buttons" type="button">Marketing</button>
+              </li>
+            </ul>
 
-      <!-- <main> -->
-      <!--Gallery-->
-      <section class="gallery-section">
-        <div class="portfolio-container container">
-          <h1 class="filters-headline headline" hidden>Portfolio</h1>
-          <!--Filters-->
-          <ul class="filters-list list">
-            <li class="filters-item">
-              <button class="buttons" type="button">All</button>
-            </li>
-            <li class="filters-item">
-              <button class="buttons" type="button">Web Site</button>
-            </li>
-            <li class="filters-item">
-              <button class="buttons" type="button">App</button>
-            </li>
-            <li class="filters-item">
-              <button class="buttons" type="button">Design</button>
-            </li>
-            <li class="filters-item">
-              <button class="buttons" type="button">Marketing</button>
-            </li>
-          </ul>
+            <!--Images-->
+            <ul class="gallery-list list">
+              <li class="gallery-item">
+                <a class="gallery-link link" href="">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_1@1x.webp 1x,
+                          1x,
+                          ./images/portfolio/img_mob_1@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-          <!--Images-->
-          <ul class="gallery-list list">
-            <li class="gallery-item">
-              <a class="gallery-link link" href="">
-                <div class="thumb">
-                  <picture>
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_1@1x.webp 1x,
-                        1x,
-                        ./images/portfolio/img_mob_1@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_1@1x.jpg 1x,
+                          ./images/portfolio/img_mob_1@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="img-item"
+                        src="./images/portfolio/img_mob_1@1x.jpg"
+                        alt="Banking App Interface Concept"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
 
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_1@1x.jpg 1x,
-                        ./images/portfolio/img_mob_1@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <img
-                      class="img-item"
-                      src="./images/portfolio/img_mob_1@1x.jpg"
-                      alt="Banking App Interface Concept"
-                      width="360"
-                      height="300"
-                    />
-                  </picture>
+                    <p class="img-text text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
+                      placeat? Blanditiis, magni animi!
+                    </p>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h2 class="gallery-title title">
+                      Banking App Interface Concept
+                    </h2>
+                    <p class="gallery-text text">App</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery-item">
+                <a class="gallery-link link" href="">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_2@1x.webp 1x,
+                          1x,
+                          ./images/portfolio/img_mob_2@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                  <p class="img-text text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
-                    placeat? Blanditiis, magni animi!
-                  </p>
-                </div>
-                <div class="gallery-card-content">
-                  <h2 class="gallery-title title">
-                    Banking App Interface Concept
-                  </h2>
-                  <p class="gallery-text text">App</p>
-                </div>
-              </a>
-            </li>
-            <li class="gallery-item">
-              <a class="gallery-link link" href="">
-                <div class="thumb">
-                  <picture>
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_2@1x.webp 1x,
-                        1x,
-                        ./images/portfolio/img_mob_2@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_2@1x.jpg 1x,
+                          ./images/portfolio/img_mob_2@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="img-item"
+                        src="./images/portfolio/img_mob_2@1x.jpg"
+                        alt="Cashless Payment"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
 
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_2@1x.jpg 1x,
-                        ./images/portfolio/img_mob_2@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <img
-                      class="img-item"
-                      src="./images/portfolio/img_mob_2@1x.jpg"
-                      alt="Cashless Payment"
-                      width="360"
-                      height="300"
-                    />
-                  </picture>
+                    <p class="img-text text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
+                      placeat? Blanditiis, magni animi!
+                    </p>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h2 class="gallery-title title">Cashless Payment</h2>
+                    <p class="gallery-text text">Marketing</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery-item">
+                <a class="gallery-link link" href="">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_3@1x.webp 1x,
+                          1x,
+                          ./images/portfolio/img_mob_3@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                  <p class="img-text text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
-                    placeat? Blanditiis, magni animi!
-                  </p>
-                </div>
-                <div class="gallery-card-content">
-                  <h2 class="gallery-title title">Cashless Payment</h2>
-                  <p class="gallery-text text">Marketing</p>
-                </div>
-              </a>
-            </li>
-            <li class="gallery-item">
-              <a class="gallery-link link" href="">
-                <div class="thumb">
-                  <picture>
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_3@1x.webp 1x,
-                        1x,
-                        ./images/portfolio/img_mob_3@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_3@1x.jpg 1x,
+                          ./images/portfolio/img_mob_3@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="img-item"
+                        src="./images/portfolio/img_mob_3@1x.jpg"
+                        alt="Meditation App"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
 
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_3@1x.jpg 1x,
-                        ./images/portfolio/img_mob_3@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <img
-                      class="img-item"
-                      src="./images/portfolio/img_mob_3@1x.jpg"
-                      alt="Meditation App"
-                      width="360"
-                      height="300"
-                    />
-                  </picture>
+                    <p class="img-text text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
+                      placeat? Blanditiis, magni animi!
+                    </p>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h2 class="gallery-title title">Meditation App</h2>
+                    <p class="gallery-text text">App</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery-item">
+                <a class="gallery-link link" href="">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_4@1x.webp 1x,
+                          1x,
+                          ./images/portfolio/img_mob_4@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                  <p class="img-text text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
-                    placeat? Blanditiis, magni animi!
-                  </p>
-                </div>
-                <div class="gallery-card-content">
-                  <h2 class="gallery-title title">Meditation App</h2>
-                  <p class="gallery-text text">App</p>
-                </div>
-              </a>
-            </li>
-            <li class="gallery-item">
-              <a class="gallery-link link" href="">
-                <div class="thumb">
-                  <picture>
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_4@1x.webp 1x,
-                        1x,
-                        ./images/portfolio/img_mob_4@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_4@1x.jpg 1x,
+                          ./images/portfolio/img_mob_4@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="img-item"
+                        src="./images/portfolio/img_mob_4@1x.jpg"
+                        alt="Taxi Service"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
 
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_4@1x.jpg 1x,
-                        ./images/portfolio/img_mob_4@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <img
-                      class="img-item"
-                      src="./images/portfolio/img_mob_4@1x.jpg"
-                      alt="Taxi Service"
-                      width="360"
-                      height="300"
-                    />
-                  </picture>
+                    <p class="img-text text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
+                      placeat? Blanditiis, magni animi!
+                    </p>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h2 class="gallery-title title">Taxi Service</h2>
+                    <p class="gallery-text text">Marketing</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery-item">
+                <a class="gallery-link link" href="">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_5@1x.webp 1x,
+                          1x,
+                          ./images/portfolio/img_mob_5@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                  <p class="img-text text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
-                    placeat? Blanditiis, magni animi!
-                  </p>
-                </div>
-                <div class="gallery-card-content">
-                  <h2 class="gallery-title title">Taxi Service</h2>
-                  <p class="gallery-text text">Marketing</p>
-                </div>
-              </a>
-            </li>
-            <li class="gallery-item">
-              <a class="gallery-link link" href="">
-                <div class="thumb">
-                  <picture>
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_5@1x.webp 1x,
-                        1x,
-                        ./images/portfolio/img_mob_5@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_5@1x.jpg 1x,
+                          ./images/portfolio/img_mob_5@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="img-item"
+                        src="./images/portfolio/img_mob_5@1x.jpg"
+                        alt="Screen Illustrations"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
 
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_5@1x.jpg 1x,
-                        ./images/portfolio/img_mob_5@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <img
-                      class="img-item"
-                      src="./images/portfolio/img_mob_5@1x.jpg"
-                      alt="Screen Illustrations"
-                      width="360"
-                      height="300"
-                    />
-                  </picture>
+                    <p class="img-text text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
+                      placeat? Blanditiis, magni animi!
+                    </p>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h2 class="gallery-title title">Screen Illustrations</h2>
+                    <p class="gallery-text text">Design</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery-item">
+                <a class="gallery-link link" href="">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_6@1x.webp 1x,
+                          1x,
+                          ./images/portfolio/img_mob_6@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                  <p class="img-text text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
-                    placeat? Blanditiis, magni animi!
-                  </p>
-                </div>
-                <div class="gallery-card-content">
-                  <h2 class="gallery-title title">Screen Illustrations</h2>
-                  <p class="gallery-text text">Design</p>
-                </div>
-              </a>
-            </li>
-            <li class="gallery-item">
-              <a class="gallery-link link" href="">
-                <div class="thumb">
-                  <picture>
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_6@1x.webp 1x,
-                        1x,
-                        ./images/portfolio/img_mob_6@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_6@1x.jpg 1x,
+                          ./images/portfolio/img_mob_6@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="img-item"
+                        src="./images/portfolio/img_mob_6@1x.jpg"
+                        alt="Online Course"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
 
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_6@1x.jpg 1x,
-                        ./images/portfolio/img_mob_6@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <img
-                      class="img-item"
-                      src="./images/portfolio/img_mob_6@1x.jpg"
-                      alt="Online Course"
-                      width="360"
-                      height="300"
-                    />
-                  </picture>
+                    <p class="img-text text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
+                      placeat? Blanditiis, magni animi!
+                    </p>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h2 class="gallery-title title">Online Courses</h2>
+                    <p class="gallery-text text">Marketing</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery-item">
+                <a class="gallery-link link" href="">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_7@1x.webp 1x,
+                          1x,
+                          ./images/portfolio/img_mob_7@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                  <p class="img-text text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
-                    placeat? Blanditiis, magni animi!
-                  </p>
-                </div>
-                <div class="gallery-card-content">
-                  <h2 class="gallery-title title">Online Courses</h2>
-                  <p class="gallery-text text">Marketing</p>
-                </div>
-              </a>
-            </li>
-            <li class="gallery-item">
-              <a class="gallery-link link" href="">
-                <div class="thumb">
-                  <picture>
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_7@1x.webp 1x,
-                        1x,
-                        ./images/portfolio/img_mob_7@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_7@1x.jpg 1x,
+                          ./images/portfolio/img_mob_7@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="img-item"
+                        src="./images/portfolio/img_mob_7@1x.jpg"
+                        alt="Instagram Stories Concept"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
 
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_7@1x.jpg 1x,
-                        ./images/portfolio/img_mob_7@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <img
-                      class="img-item"
-                      src="./images/portfolio/img_mob_7@1x.jpg"
-                      alt="Instagram Stories Concept"
-                      width="360"
-                      height="300"
-                    />
-                  </picture>
+                    <p class="img-text text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
+                      placeat? Blanditiis, magni animi!
+                    </p>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h2 class="gallery-title title">
+                      Instagram Stories Concept
+                    </h2>
+                    <p class="gallery-text text">Design</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery-item">
+                <a class="gallery-link link" href="">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_8@1x.webp 1x,
+                          1x,
+                          ./images/portfolio/img_mob_8@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                  <p class="img-text text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
-                    placeat? Blanditiis, magni animi!
-                  </p>
-                </div>
-                <div class="gallery-card-content">
-                  <h2 class="gallery-title title">Instagram Stories Concept</h2>
-                  <p class="gallery-text text">Design</p>
-                </div>
-              </a>
-            </li>
-            <li class="gallery-item">
-              <a class="gallery-link link" href="">
-                <div class="thumb">
-                  <picture>
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_8@1x.webp 1x,
-                        1x,
-                        ./images/portfolio/img_mob_8@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_8@1x.jpg 1x,
+                          ./images/portfolio/img_mob_8@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="img-item"
+                        src="./images/portfolio/img_mob_8@1x.jpg"
+                        alt="Organic Food"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
 
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_8@1x.jpg 1x,
-                        ./images/portfolio/img_mob_8@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <img
-                      class="img-item"
-                      src="./images/portfolio/img_mob_8@1x.jpg"
-                      alt="Organic Food"
-                      width="360"
-                      height="300"
-                    />
-                  </picture>
+                    <p class="img-text text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
+                      placeat? Blanditiis, magni animi!
+                    </p>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h2 class="gallery-title title">Organic Food</h2>
+                    <p class="gallery-text text">Web Site</p>
+                  </div>
+                </a>
+              </li>
+              <li class="gallery-item">
+                <a class="gallery-link link" href="">
+                  <div class="thumb">
+                    <picture>
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_9@1x.webp 1x,
+                          1x,
+                          ./images/portfolio/img_mob_9@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
 
-                  <p class="img-text text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
-                    placeat? Blanditiis, magni animi!
-                  </p>
-                </div>
-                <div class="gallery-card-content">
-                  <h2 class="gallery-title title">Organic Food</h2>
-                  <p class="gallery-text text">Web Site</p>
-                </div>
-              </a>
-            </li>
-            <li class="gallery-item">
-              <a class="gallery-link link" href="">
-                <div class="thumb">
-                  <picture>
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_9@1x.webp 1x,
-                        1x,
-                        ./images/portfolio/img_mob_9@2x.webp 2x
-                      "
-                      type="image/webp"
-                    />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/portfolio/img_mob_9@1x.jpg 1x,
+                          ./images/portfolio/img_mob_9@2x.jpg 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="img-item"
+                        src="./images/portfolio/img_mob_9@1x.jpg"
+                        alt="Fresh Coffee"
+                        width="360"
+                        height="300"
+                      />
+                    </picture>
 
-                    <source
-                      media="(min-width: 320px)"
-                      srcset="
-                        ./images/portfolio/img_mob_9@1x.jpg 1x,
-                        ./images/portfolio/img_mob_9@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-                    <img
-                      class="img-item"
-                      src="./images/portfolio/img_mob_9@1x.jpg"
-                      alt="Fresh Coffee"
-                      width="360"
-                      height="300"
-                    />
-                  </picture>
-
-                  <p class="img-text text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
-                    placeat? Blanditiis, magni animi!
-                  </p>
-                </div>
-                <div class="gallery-card-content">
-                  <h2 class="gallery-title title">Fresh Coffee</h2>
-                  <p class="gallery-text text">Web Site</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- </main> -->
+                    <p class="img-text text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum, dicta cupiditate. Officiis at nesciunt autem ipsam
+                      placeat? Blanditiis, magni animi!
+                    </p>
+                  </div>
+                  <div class="gallery-card-content">
+                    <h2 class="gallery-title title">Fresh Coffee</h2>
+                    <p class="gallery-text text">Web Site</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
 
       <!--Footer-->
       <div class="footer-wrapper">

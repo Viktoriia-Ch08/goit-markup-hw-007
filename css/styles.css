@@ -215,7 +215,7 @@ body {
 
 .header-logo-link {
    padding-top: 24px;
-   padding-bottom: 24px;
+   padding-bottom: 22px;
 }
 
 .header-logo {
@@ -459,7 +459,7 @@ body {
 @media screen and (min-width: 768px) {
    .hero-container {
       gap: 36px;
-      padding-top: 112px;
+      padding-top: 184px;
       padding-bottom: 112px;
    }
 }
@@ -470,7 +470,7 @@ body {
 
       margin-left: auto;
       margin-right: auto;
-      padding-top: 188px;
+      padding-top: 260px;
       padding-bottom: 188px;
    }
 }
@@ -542,6 +542,13 @@ body {
 .priority-section {
    padding-top: 96px;
    padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+   .priority-section {
+   padding-top: 120px;
+   padding-bottom: 120px;
+   }
 }
 
 .priority-container {
@@ -822,7 +829,14 @@ body {
 
 /* Customers */
 .customers-section {
-   padding: 96px 0;
+   padding-top: 96px;
+   padding-bottom: 96px;
+}
+@media screen and (min-width: 1158px) {
+   .customers-section {
+      padding-top: 120px;
+      padding-bottom: 120px;
+   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
@@ -920,6 +934,12 @@ body {
 
 }
 
+@media screen and (min-width: 1158px) {
+   .footer-section {
+      padding-top: 100px;
+      padding-bottom: 100px;
+   }
+}
 .footer-container {
    display: flex;
    flex-direction: column;
@@ -936,9 +956,6 @@ body {
       justify-content: flex-start;
       align-items: baseline;
       gap: 72px 24px;
-
-      padding-top: 96px;
-      padding-bottom: 96px;
    }
 }
 
@@ -952,9 +969,6 @@ body {
 @media screen and (min-width: 1158px) {
    .footer-container {
       justify-content: space-between;
-      
-      padding-top: 100px;
-      padding-bottom: 100px;
    }
 }
 
@@ -1677,9 +1691,16 @@ body {
       justify-content: center;
       gap: 24px;
 
-      margin-bottom: 64px;
+      margin-bottom: 80px;
       padding-right: 16px;
    }
+}
+
+@media screen and (min-width: 1158px) {
+   .filters-list {
+      margin-bottom: 72px;
+   }
+
 }
 
 .buttons {
@@ -1723,18 +1744,36 @@ body {
 @media screen and (min-width:768px) {
    .gallery-section {
       padding-top: 64px;
-      padding-bottom: 96px;
+      padding-bottom: 80px;
+   }
+}
+
+@media screen and (min-width:1158px) {
+   .gallery-section {
+      padding-top: 100px;
+      padding-bottom: 120px;
    }
 }
 
 .gallery-list {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: center;
    row-gap: 48px;
+}
+@media screen and (min-width:768px) {
+   .gallery-list {
+      row-gap: 72px;
+      column-gap: 24px;
+   }
 
-   padding-left: 16px;
-   padding-right: 16px;
+}
+
+@media screen and (min-width:1158px) {
+   .gallery-list {
+      row-gap: 40px;
+   }
+   
 }
 
 .gallery-item {
